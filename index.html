@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ice Cream Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <div id="main-container">
+    <div id="top-menu">
+        <h1>Ice Cream Shop</h1>
+    </div>
+    
+    <div id="bottom-menu">
+        <div class="bottom-submenu">
+            <h1 class="submenu-title">Make Ice Cream</h1>
+            <p>Order Type:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Dine In</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Dine Out</label><br><br>
+
+            <label for="dog-names">Choose a flavor:</label>
+            <select name="dog-names" id="dog-names">
+                <option value="rigatoni">Vanilla</option>
+                <option value="dave">Chocolate</option>
+                <option value="pumpernickel">Caramel</option>
+                <option value="reeses">Blueberry</option>
+            </select>
+
+            <p>Choose Toppings:</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Oreo</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> M&M</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Gummy Bears</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle4" value="Boats">
+            <label for="vehicle4"> Sprinkles</label><br><br>
+
+            <label for="cowbell">Choose number of scoops:</label><br>
+            <input type="range" id="cowbell" name="cowbell" 
+            min="1" max="5" step="1" oninput="num.value = this.value">
+            <output id="num">1</output>        <br>        <br>
+
+            <button>Update Order</button>
+            <button>Place Order</button>
+        </div>
+
+        <div class="bottom-submenu">
+            <h1 class="submenu-title">Order Summary</h1>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
